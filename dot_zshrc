@@ -1,0 +1,68 @@
+# vim: ft=zsh
+export PATH=~/.local/bin:~/go/bin:~/.npm/bin:$PATH
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt extendedglob
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '$HOME/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+autoload edit-command-line; zle -N edit-command-line
+
+bindkey '^?' backward-delete-char
+bindkey '^ ' autosuggest-accept
+bindkey '^R' history-incremental-search-backward
+bindkey '^e' edit-command-line
+
+bindkey -r '^H'
+bindkey -r '^J'
+bindkey -r '^K'
+bindkey -r '^L'
+
+eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(chezmoi completion zsh)"
+eval "$(oh-my-posh init zsh --config ~/.theme.omp.json)"
+eval "$(uv --generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+if [[ "$TERM" == "xterm-kitty" ]]; then
+  alias icat="kitty icat --align=left"
+fi
+
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+
+alias lat='(){ eza -lahTL ${1:-1};}'
+alias l="ls -al"
+alias ls="eza --icons=auto"
+
+alias nvc="cd $HOME/.config/nvim && $EDITOR"
+alias vi=$EDITOR
+alias vim=$EDITOR
+
+alias gl='git pull'
+alias gst='git status'
+
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
