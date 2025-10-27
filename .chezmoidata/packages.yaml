@@ -1,0 +1,54 @@
+packages:
+  arch:
+    pacman:
+      - 7zip
+      - atuin
+      - calibre
+      - dnsmasq
+      - docker
+      - docker-buildx
+      - docker-compose
+      - eza
+      - git
+      - git-delta
+      - github-cli
+      - go
+      - helm
+      - hypridle
+      - hyprlock
+      - hyprpaper
+      - imagemagick
+      - k9s
+      - kitty
+      - kubectl
+      - lazygit
+      - libvirt
+      - lsof
+      - mermaid-cli
+      - neovim
+      - nodejs
+      - npm
+      - ntfs-3g
+      - spotify-launcher
+      - qemu-full
+      - texlive-bin
+      - texlive-core
+      - texlive-fontsextra
+      - texlive-fontsrecommended
+      - texlive-latex
+      - texlive-latexextra
+      - tree-sitter-cli
+      - ttf-jetbrains-mono-nerd
+      - uv
+      - virt-manager
+      - waybar
+      - zoxide
+      - zsh
+      - zsh-autosuggestions
+      - zsh-history-substring-search
+      - zsh-syntax-highlighting
+    yay:
+      - logiops
+      - oh-my-posh-bin
+      - slack-desktop
+      - tfenv
