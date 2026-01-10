@@ -42,6 +42,7 @@ packages:
       - uv
       - virt-manager
       - waybar
+      - zip
       - zoxide
       - zsh
       - zsh-autosuggestions
