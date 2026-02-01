@@ -4,6 +4,7 @@ packages:
       - 7zip
       - atuin
       - calibre
+      - cups
       - dnsmasq
       - direnv
       - docker
