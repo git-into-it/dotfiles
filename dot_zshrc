@@ -28,6 +28,7 @@ bindkey -r '^L'
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(chezmoi completion zsh)"
+eval "$(direnv hook zsh)"
 eval "$(oh-my-posh init zsh --config ~/.theme.omp.json)"
 eval "$(uv --generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"

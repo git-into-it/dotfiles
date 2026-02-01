@@ -5,6 +5,7 @@ packages:
       - atuin
       - calibre
       - dnsmasq
+      - direnv
       - docker
       - docker-buildx
       - docker-compose
