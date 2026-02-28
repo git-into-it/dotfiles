@@ -31,6 +31,7 @@ packages:
       - nodejs
       - npm
       - ntfs-3g
+      - pandoc
       - spotify-launcher
       - qemu-full
       - texlive-bin
