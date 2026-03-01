@@ -52,6 +52,8 @@ packages:
       - zsh-history-substring-search
       - zsh-syntax-highlighting
     yay:
+      - 1password
+      - 1password-cli
       - logiops
       - oh-my-posh-bin
       - slack-desktop
