@@ -3,7 +3,6 @@ packages:
     pacman:
       - 7zip
       - atuin
-      - calibre
       - cups
       - dnsmasq
       - direnv
@@ -24,6 +23,7 @@ packages:
       - kitty
       - kubectl
       - lazygit
+      - libiconv
       - libvirt
       - lsof
       - mermaid-cli
@@ -54,6 +54,7 @@ packages:
     yay:
       - 1password
       - 1password-cli
+      - calibre-bin
       - logiops
       - oh-my-posh-bin
       - slack-desktop
