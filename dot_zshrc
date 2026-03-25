@@ -48,6 +48,11 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
   alias icat="kitty icat --align=left"
 fi
 
+claude() {
+  command claude "$@"
+  bindkey '^ ' autosuggest-accept
+}
+
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
