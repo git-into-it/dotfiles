@@ -27,7 +27,7 @@
         },
         {
           "options": {
-            "branch_icon": "\ue0a0",
+            "branch_icon": " \ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
@@ -35,14 +35,8 @@
           "type": "git",
           "style": "plain",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:black{{ end }}",
-            "{{ if or (gt .Ahead 0) (gt .Behind 0) }}p:white{{ end }}"
-          ],
-          "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
-            "{{ if gt .Ahead 0 }}#49416D{{ end }}",
-            "{{ if gt .Behind 0 }}#7A306C{{ end }}"
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}"
           ]
         },
         {
