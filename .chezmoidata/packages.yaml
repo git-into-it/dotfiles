@@ -10,6 +10,7 @@ packages:
       - docker-buildx
       - docker-compose
       - eza
+      - fzf
       - git
       - git-delta
       - github-cli
@@ -26,6 +27,7 @@ packages:
       - libiconv
       - libvirt
       - lsof
+      - luarocks
       - mermaid-cli
       - neovim
       - nodejs
@@ -55,6 +57,7 @@ packages:
       - 1password
       - 1password-cli
       - calibre-bin
+      - hererocks
       - logiops
       - oh-my-posh-bin
       - slack-desktop
