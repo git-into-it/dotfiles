@@ -20,6 +20,7 @@ packages:
       - hyprlock
       - hyprpaper
       - imagemagick
+      - ipcalc
       - k9s
       - kitty
       - kubectl
