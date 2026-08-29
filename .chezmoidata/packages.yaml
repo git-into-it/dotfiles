@@ -57,6 +57,7 @@ packages:
     yay:
       - 1password
       - 1password-cli
+      - anydesk-bin
       - calibre-bin
       - hererocks
       - logiops
