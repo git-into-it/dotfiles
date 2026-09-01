@@ -19,6 +19,7 @@ packages:
       - hypridle
       - hyprlock
       - hyprpaper
+      - hyprshot
       - imagemagick
       - ipcalc
       - k9s
@@ -29,6 +30,7 @@ packages:
       - libvirt
       - lsof
       - luarocks
+      - mako
       - mermaid-cli
       - neovim
       - nodejs
@@ -64,3 +66,4 @@ packages:
       - oh-my-posh-bin
       - slack-desktop
       - tfenv
+      - wlogout
