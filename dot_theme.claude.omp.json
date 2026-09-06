@@ -16,6 +16,11 @@
       "alignment": "left",
       "segments": [
         {
+          "template": "[<#F07623>󰯉</> {{ .Model.DisplayName }}]",
+          "type": "claude",
+          "style": "plain"
+        },
+        {
           "options": {
             "dir_length": 3,
             "folder_separator_icon": "\ue0bb",
@@ -41,6 +46,11 @@
         },
         {
           "template": "[<#F3AE35>󰵼</> {{ .TokenUsagePercent.String }}%]",
+          "type": "claude",
+          "style": "plain"
+        },
+        {
+          "template": "[<#59C9A5></> {{ .Cost.TotalCostUSD }}]",
           "type": "claude",
           "style": "plain"
         }
